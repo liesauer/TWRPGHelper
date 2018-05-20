@@ -1,0 +1,18 @@
+﻿<Window x:Class="TWRPGHelper.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TWRPGHelper"
+        mc:Ignorable="d"
+        Title="TWRPG Helper" Height="400" Width="750" ResizeMode="CanMinimize">
+    <Grid>
+        <Image x:Name="logo" Margin="0,0,0,0" Source="/Resources/twrpg_s4_logo.png" VerticalAlignment="Bottom"/>
+        <ListBox x:Name="list" HorizontalAlignment="Left" Width="200" Margin="0,0,0,127.4" SelectionChanged="list_SelectionChanged" MouseDoubleClick="list_MouseDoubleClick"/>
+        <ScrollViewer x:Name="scrollerViewer" Margin="200,0,0,127.4" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Auto">
+            <ScrollViewer.Content>
+                <TextBlock x:Name="content" TextWrapping="WrapWithOverflow" Margin="0,0,0,0" Padding="5,5,15,5" Width="{Binding Path=ActualWidth, ElementName=scrollerViewer}"/>
+            </ScrollViewer.Content>
+        </ScrollViewer>
+    </Grid>
+</Window>
