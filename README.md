@@ -2,6 +2,9 @@
 世界RPG助手
 THE WORLD RPG Helper
 
+## 运行要求[Requirement]
+1. .NET 4.0
+
 ## 功能[Features]
 1. 快捷查看所有存档。Check out all profiles quicker and easier.
 2. 双击复制代码。Double click to copy the code.
